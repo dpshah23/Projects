@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Projects - Home</title>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#">Home</a>
+       
+    </nav>
+    <h1>Welcome to My Projects</h1>
+    <p>Contact: <a href="mailto:dpshah2307@gmail.com">dpshah2307@gmail.com</a></p>
+</header>
+
+<div id="projects-container">
+    <div class="project-card" onclick="downloadProject('To-Do List Application', 'To-Do List.exe')">
+        <div class="project-info">
+            <div class="project-title">To-Do List Application</div>
+            <a href="To-Do List.exe" class="download-btn" download>Download</a>
+        </div>
+    </div>
+
+    <!-- Add more project cards as needed -->
+</div>
+
+<footer>
+    <p>&copy; 2023 Deep Shah. All rights reserved.</p>
+    <p>
+        <a href="license.html">MIT License</a>
+        |
+        <a href="tnc.html">Terms and Conditions</a>
+    </p>
+</footer>
+
+<script>
+    function downloadProject(projectName, filePath) {
+        alert(`Downloading ${projectName}...`);
+        // Add your logic here to initiate the download or perform additional actions
+        // For example, you can use window.location.href to redirect the user to the download link
+        // window.location.href = filePath;
+    }
+</script>
+
+</body>
+</html>
